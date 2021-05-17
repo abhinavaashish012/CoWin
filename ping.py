@@ -25,7 +25,7 @@ try:
                     for j in range(0,len(d['centers'][i]['sessions'])):
                         #print(f"{d['centers'][i]['sessions'][j]}")   #working display
                         if d['centers'][i]['sessions'][j]['min_age_limit'] ==18 and d['centers'][i]['sessions'][j]['available_capacity_dose1'] >0:
-                            m=f"{d['centers'][i]['name']}======={d['centers'][i]['sessions'][j]['vaccine']}\n\n Date : {date} \n\n Link :\n https://selfregistration.cowin.gov.in"
+                            m=f"{d['centers'][i]['name']}======={d['centers'][i]['sessions'][j]['vaccine']}\n\n Age :{d['centers'][i]['sessions'][j]['min_age_limit']} \n\nDate : {date} \n\n Link :\n https://selfregistration.cowin.gov.in"
                             telegram_msg=f"https://api.telegram.org/bot{chat_id}/sendMessage?chat_id=-524951835&text={m}"
                             print(m)
                             requests.get(telegram_msg)
