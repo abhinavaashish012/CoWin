@@ -99,6 +99,10 @@ public class Sessions {
         return available_capacity_dose2;
     }
 
+    public int getTotalVaccines()
+    {
+        return this.getAvailable_capacity_dose1()+this.getAvailable_capacity_dose2();
+    }
     public void setAvailable_capacity_dose2(int available_capacity_dose2) {
         this.available_capacity_dose2 = available_capacity_dose2;
     }

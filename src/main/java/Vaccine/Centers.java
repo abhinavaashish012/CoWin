@@ -21,6 +21,7 @@ public class Centers {
     private String name;
     private String address;
     private String state_name;
+    private String district_name;
     private String block_name;
     private int pincode;
     private String from;
@@ -32,11 +33,12 @@ public class Centers {
     public Centers() {
     }
 
-    public Centers(long center_id, String name, String address, String state_name, String block_name, int pincode, String from, String to, String fee_type, Sessions[] sessions, Vaccine_Fees[] vaccine_fees) {
+    public Centers(long center_id, String name, String address, String state_name, String district_name, String block_name, int pincode, String from, String to, String fee_type, Sessions[] sessions, Vaccine_Fees[] vaccine_fees) {
         this.center_id = center_id;
         this.name = name;
         this.address = address;
         this.state_name = state_name;
+        this.district_name = district_name;
         this.block_name = block_name;
         this.pincode = pincode;
         this.from = from;
@@ -108,6 +110,14 @@ public class Centers {
 
     public void setTo(String to) {
         this.to = to;
+    }
+
+    public String getDistrict_name() {
+        return district_name;
+    }
+
+    public void setDistrict_name(String district_name) {
+        this.district_name = district_name;
     }
 
     public String getFee_type() {

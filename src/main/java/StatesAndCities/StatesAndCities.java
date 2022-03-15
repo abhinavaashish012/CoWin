@@ -4,13 +4,13 @@ import com.google.gson.Gson;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.time.LocalDate;
 import java.util.Arrays;
 
 public class StatesAndCities {
+
     public static void main(String[] args) throws IOException {
 
-        String url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/16";
+        String url = "https://cdn-api.co-vin.in/api/v2/admin/location/districts/15";
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");

@@ -1,7 +1,5 @@
 package StatesAndCities;
 
-import org.jetbrains.annotations.NotNull;
-
 public class District{
 
     private int district_id;
@@ -38,5 +36,4 @@ public class District{
                 ", district_name='" + district_name + '\'' +
                 '}';
     }
-
 }
