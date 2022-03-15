@@ -1,0 +1,3 @@
+chat_id="1763777741:AAEEh_SSjdSe0s61Rtl8KTJfPi5O62yNKVs"
+
+telegram_msg=f"https://api.telegram.org/bot{chat_id}/sendMessage?chat_id=-524951835&text={m}"
